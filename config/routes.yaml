@@ -1,0 +1,48 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+index:
+      path: /index
+      controller: App\Controller\IndexController::index
+login:
+      path: /
+      controller: App\Controller\SecurityController::login
+whishlist:
+      path: /wishlist
+      controller: App\Controller\WishListController::wishlist
+wishlistadd:
+      path: /wishlist/add
+      controller: App\Controller\WishListController::wishlistAdd
+whistlistedit:
+      path: /wishlist/edit/{id}
+      controller: App\Controller\WishListController::wishlistedit
+wishlistopen:
+      path: /wishlist/open/{id}
+      controller: App\Controller\WishListController::wishlistOpen
+wishlistshare:
+      path: /wishlist/share/{code}
+      controller: App\Controller\WishListController::wishlistShare
+wishlistjoin:
+      path: /wishlist/share/{code}/join
+      controller: App\Controller\WishListController::wishlistJoin
+wishlistviewcode:
+      path: /wishlist/share/{code}/view
+      controller: App\Controller\WishListController::wishlistviewcode
+wishlistother:
+      path: /wishlistother
+      controller: App\Controller\WishListOtherController::wishlistOther
+wishlistotheropen:
+      path: /wishlistother/open/{id}
+      controller: App\Controller\WishListOtherController::wishlistOtherOpen
+wishlistotherjoin:
+      path: /wishlistother/join/{id}
+      controller: App\Controller\WishListOtherController::wishlistOtherJoin
+wishlistotherleave:
+      path: /wishlistother/leave/{id}
+      controller: App\Controller\WishListOtherController::wishlistOtherLeave
+updatelist:
+      path: /updatelist
+      controller: App\Controller\UpdateListController::updatelist
+wishlistdelete:
+      path: /wishlist/delete/{id}
+      controller: App\Controller\WishListController::wishlistDelete
