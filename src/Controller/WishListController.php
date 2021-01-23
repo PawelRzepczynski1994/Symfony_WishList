@@ -169,10 +169,6 @@ class WishListController extends AbstractController{
                         }
                     }
 
-
-
-
-
                 $this->addFlash('success', 'Edytowales wybrana liste!'); 
             }
            

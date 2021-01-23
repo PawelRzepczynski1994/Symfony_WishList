@@ -11,7 +11,6 @@
         <a class="nav-link" href="/index">
           <i class="fa fa-home"></i>
           Home
-          <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item">
@@ -31,15 +30,19 @@
         </a>
       </li>
     </ul>
+
     <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa fa-globe">
-            {{ app.user.username }}
-          </i>
-        </a>
-      </li>
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     {{ app.user.username }}
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item" href="/options">Ustawienia</a>
+    <a class="dropdown-item" href="/logout">Wyloguj</a>
+  </div>
+</div>
     </ul>
+
   </div>
 </nav>
 {% endblock %}

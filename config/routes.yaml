@@ -46,3 +46,6 @@ updatelist:
 wishlistdelete:
       path: /wishlist/delete/{id}
       controller: App\Controller\WishListController::wishlistDelete
+options:
+      path: /options   
+      controller: App\Controller\OptionsController::OptionsIndex
